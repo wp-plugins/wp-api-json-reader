@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/extend/plugins/wpapi-json-reader/
 Description: This plugin provide a widget(s) to get, read and show posts from wordpress sites (with WP REST API Installed) to an other(s) wordpress site(s)!
 Author: elsteno
 Author URI: http://elsteno.gr/
-Version: 1.0
+Version: 1.1
 Domain Path: /languages
 Text Domain: wpapijsonreader
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -210,7 +210,7 @@ class WP_Api_Json_Feeds extends WP_Widget {
 		</p>
 
  		<p>
-			<label for="<?php echo $this->get_field_id( 'wpapiPostsCat' ); ?>"><?php _e( 'Posts Category:','wpapijsonreader' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'wpapiPostsCat' ); ?>"><?php _e( 'Posts Category ID:','wpapijsonreader' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'wpapiPostsCat' ); ?>" name="<?php echo $this->get_field_name( 'wpapiPostsCat' ); ?>" type="text" value="<?php echo esc_attr( $wpapiPostsCat ); ?>">
 		</p>
 
